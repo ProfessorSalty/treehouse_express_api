@@ -1,0 +1,24 @@
+{
+  "name": "treehouse_express_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "mon_go": "mkdir -p data && mongod --port 27017 --dbpath=./data --nojournal --quiet",
+    "server": "nodemon app.js",
+    "start": "npm run mon_go & npm run server"
+  },
+  "keywords": [],
+  "author": "Greg Smith",
+  "license": "Whatevs",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "mongoose": "^4.5.8",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "express-sanitizer": "^1.0.1",
+    "nodemon": "^1.10.0"
+  }
+}
